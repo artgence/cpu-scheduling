@@ -334,7 +334,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587230387509" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587230399513" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -540,14 +540,11 @@
       <workItem from="1587062906183" duration="1348000" />
       <workItem from="1587068136622" duration="26923000" />
       <workItem from="1587175175713" duration="5204000" />
-      <workItem from="1587230159124" duration="229000" />
+      <workItem from="1587230159124" duration="529000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_test100SizeOccupiedTableView - 2020.04.16 at 19h 48m 59s.xml">
-      <configuration name="MainTest.test100SizeOccupiedTableView" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_testBeginBlockedTableView - 2020.04.16 at 19h 49m 32s.xml">
       <configuration name="MainTest.testBeginBlockedTableView" configurationId="JUnit" />
     </history-entry>
@@ -575,13 +572,15 @@
     <history-entry file="MainTest_testNameTextField - 2020.04.17 at 19h 04m 41s.xml">
       <configuration name="MainTest.testNameTextField" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest - 2020.04.18 at 10h 19m 53s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69307000" />
+    <option name="totallyTimeSpent" value="69595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16689008" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -592,7 +591,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.18811882" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24220963" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36260623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30551627" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -739,7 +738,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.291954" />
               </list>
             </option>
           </splitter-proportions>
@@ -751,7 +750,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.291954" />
               </list>
             </option>
           </splitter-proportions>
@@ -763,7 +762,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.291954" />
               </list>
             </option>
           </splitter-proportions>
@@ -775,7 +774,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.291954" />
               </list>
             </option>
           </splitter-proportions>
@@ -788,6 +787,7 @@
             <option name="proportions">
               <list>
                 <option value="0.291954" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
