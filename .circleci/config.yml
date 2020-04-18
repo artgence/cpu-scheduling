@@ -3,8 +3,8 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/openjdk:8-jdk
+      - image: circleci/jdk8:0.1.1
 
     steps:
       - checkout
-      - run: ant test
+      - run: chmod +x ant test
