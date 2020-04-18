@@ -19,6 +19,14 @@
         <pathelement location="lib/testfx-core-4.0.13-alpha.jar"/>
         <pathelement location="lib/testfx-junit-4.0.13-alpha.jar"/>
         <pathelement location="lib/org.eclipse.fx.ide.css.jfx8_2.4.0.201605112122.jar"/>
+        <pathelement location="lib/javafx.base.jar"/>
+        <pathelement location="lib/javafx.controls.jar"/>
+        <pathelement location="lib/javafx.fxml.jar"/>
+        <pathelement location="lib/javafx.graphics.jar"/>
+        <pathelement location="lib/javafx.media.jar"/>
+        <pathelement location="lib/javafx.swing.jar"/>
+        <pathelement location="lib/javafx.web.jar"/>
+        <pathelement location="lib/javafx-swt.jar"/>
         <pathelement location="${main.build.dir}"/>
     </path>
 
