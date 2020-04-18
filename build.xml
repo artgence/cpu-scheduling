@@ -27,6 +27,7 @@
         <pathelement location="lib/javafx.swing.jar"/>
         <pathelement location="lib/javafx.web.jar"/>
         <pathelement location="lib/javafx-swt.jar"/>
+        <pathelement location="lib/jfxrt.jar"/>
         <pathelement location="${main.build.dir}"/>
     </path>
 
