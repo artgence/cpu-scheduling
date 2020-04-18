@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpu-scheduling.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpu-scheduling.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_cpuschedule.xml" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,6 +100,24 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-743392853">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="xml" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="XML" value="13" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
@@ -108,7 +127,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="350">
               <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,11 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -132,32 +148,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8200">
+            <state relative-caret-position="7725">
               <caret line="336" selection-start-line="336" selection-end-line="336" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4920#4921#0" expanded="true" />
-                <element signature="e#4971#4972#0" expanded="true" />
-                <element signature="e#13620#13621#0" expanded="true" />
-                <element signature="e#13682#13683#0" expanded="true" />
-                <element signature="e#13465#13466#0" expanded="true" />
-                <element signature="e#13513#13514#0" expanded="true" />
-                <element signature="e#13568#13569#0" expanded="true" />
-                <element signature="e#13605#13606#0" expanded="true" />
-                <element signature="e#13677#13678#0" expanded="true" />
-                <element signature="e#13711#13712#0" expanded="true" />
-                <element signature="e#15057#15058#0" expanded="true" />
-                <element signature="e#15146#15147#0" expanded="true" />
-                <element signature="e#15184#15185#0" expanded="true" />
-                <element signature="e#15227#15228#0" expanded="true" />
-                <element signature="e#15279#15280#0" expanded="true" />
-                <element signature="e#15330#15331#0" expanded="true" />
-                <element signature="e#15882#15883#0" expanded="true" />
-                <element signature="e#15927#15928#0" expanded="true" />
-                <element signature="e#15655#15656#0" expanded="true" />
-                <element signature="e#15705#15706#0" expanded="true" />
-                <element signature="e#15790#15791#0" expanded="true" />
-                <element signature="e#15823#15824#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,8 +160,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="425">
+              <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -258,18 +252,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="cpuschedule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpuschedule" type="462c0819:PsiDirectoryNode" />
+              <item name="cpu-scheduling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpu-scheduling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpu-scheduling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpu-scheduling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpu-scheduling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpu-scheduling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -290,7 +295,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587102055853" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587175995167" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -322,7 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="JUnit.MainTest.testNameTextField">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -375,11 +380,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testBeginBlockedTableView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.testAddButtonLabel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cpuschedule" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testBeginBlockedTableView" />
+      <option name="METHOD_NAME" value="testAddButtonLabel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -403,11 +408,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testBeginReadyTableView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.testBeginRunningTableView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cpuschedule" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testBeginReadyTableView" />
+      <option name="METHOD_NAME" value="testBeginRunningTableView" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -417,11 +422,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testBeginRunningTableView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.testNameTextField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cpuschedule" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testBeginRunningTableView" />
+      <option name="METHOD_NAME" value="testNameTextField" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -463,18 +468,18 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.MainTest.testBeginRunningTableView" />
-      <item itemvalue="JUnit.MainTest.testBeginReadyTableView" />
-      <item itemvalue="JUnit.MainTest.testBeginBlockedTableView" />
       <item itemvalue="JUnit.MainTest.testBeginButton" />
       <item itemvalue="JUnit.MainTest" />
+      <item itemvalue="JUnit.MainTest.testAddButtonLabel" />
+      <item itemvalue="JUnit.MainTest.testNameTextField" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.testNameTextField" />
+        <item itemvalue="JUnit.MainTest.testAddButtonLabel" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.testBeginRunningTableView" />
         <item itemvalue="JUnit.MainTest.testBeginButton" />
-        <item itemvalue="JUnit.MainTest.testBeginReadyTableView" />
-        <item itemvalue="JUnit.MainTest.testBeginBlockedTableView" />
       </list>
     </recent_temporary>
   </component>
@@ -495,19 +500,11 @@
       <workItem from="1587049808123" duration="9916000" />
       <workItem from="1587062906183" duration="1348000" />
       <workItem from="1587068136622" duration="26923000" />
+      <workItem from="1587175175713" duration="818000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_testBeginBlockedTableView - 2020.04.16 at 19h 42m 01s.xml">
-      <configuration name="MainTest.testBeginBlockedTableView" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_test100SizeOccupiedTableView - 2020.04.16 at 19h 47m 02s.xml">
-      <configuration name="MainTest.test100SizeOccupiedTableView" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_test100SizeOccupiedTableView - 2020.04.16 at 19h 48m 36s.xml">
-      <configuration name="MainTest.test100SizeOccupiedTableView" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_test100SizeOccupiedTableView - 2020.04.16 at 19h 48m 59s.xml">
       <configuration name="MainTest.test100SizeOccupiedTableView" configurationId="JUnit" />
     </history-entry>
@@ -529,15 +526,24 @@
     <history-entry file="MainTest - 2020.04.16 at 19h 57m 06s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest - 2020.04.17 at 19h 01m 02s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.17 at 19h 01m 51s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testNameTextField - 2020.04.17 at 19h 04m 41s.xml">
+      <configuration name="MainTest.testNameTextField" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63859000" />
+    <option name="totallyTimeSpent" value="64677000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20911528" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16286863" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.3297587" />
       <window_info id="Designer" order="3" />
@@ -546,7 +552,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.18811882" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21782178" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24220963" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30551627" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -559,7 +565,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="15" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.3281471" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -638,19 +644,9 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="350">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -660,40 +656,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8200">
+        <state relative-caret-position="7725">
           <caret line="336" selection-start-line="336" selection-end-line="336" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4920#4921#0" expanded="true" />
-            <element signature="e#4971#4972#0" expanded="true" />
-            <element signature="e#13620#13621#0" expanded="true" />
-            <element signature="e#13682#13683#0" expanded="true" />
-            <element signature="e#13465#13466#0" expanded="true" />
-            <element signature="e#13513#13514#0" expanded="true" />
-            <element signature="e#13568#13569#0" expanded="true" />
-            <element signature="e#13605#13606#0" expanded="true" />
-            <element signature="e#13677#13678#0" expanded="true" />
-            <element signature="e#13711#13712#0" expanded="true" />
-            <element signature="e#15057#15058#0" expanded="true" />
-            <element signature="e#15146#15147#0" expanded="true" />
-            <element signature="e#15184#15185#0" expanded="true" />
-            <element signature="e#15227#15228#0" expanded="true" />
-            <element signature="e#15279#15280#0" expanded="true" />
-            <element signature="e#15330#15331#0" expanded="true" />
-            <element signature="e#15882#15883#0" expanded="true" />
-            <element signature="e#15927#15928#0" expanded="true" />
-            <element signature="e#15655#15656#0" expanded="true" />
-            <element signature="e#15705#15706#0" expanded="true" />
-            <element signature="e#15790#15791#0" expanded="true" />
-            <element signature="e#15823#15824#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="425">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
         </state>
       </provider>
     </entry>

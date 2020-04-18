@@ -18,6 +18,7 @@
         <pathelement location="lib/testFx-3.1.2.jar"/>
         <pathelement location="lib/testfx-core-4.0.13-alpha.jar"/>
         <pathelement location="lib/testfx-junit-4.0.13-alpha.jar"/>
+        <pathelement location="lib/org.eclipse.fx.ide.css.jfx8_2.4.0.201605112122.jar"/>
         <pathelement location="${main.build.dir}"/>
     </path>
 
