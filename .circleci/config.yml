@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/openjdk:13-jdk-buster
+      - image: circleci/openjdk:8u181-stretch
 
     steps:
       - checkout
