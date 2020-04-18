@@ -3,8 +3,8 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/jdk8:0.1.1
+      - image: circleci/openjdk:14-jdk-buster
 
     steps:
       - checkout
-      - run: chmod +x ant test
+      - run: ant test
