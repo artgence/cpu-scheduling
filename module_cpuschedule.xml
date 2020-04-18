@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_cpuschedule" default="compile.module.cpuschedule">
+  <dirname property="module.cpuschedule.basedir" file="${ant.file.module_cpuschedule}"/>
+  
+  <property name="module.jdk.home.cpuschedule" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.cpuschedule" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.cpuschedule" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.cpuschedule" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="cpuschedule.output.dir" value="${module.cpuschedule.basedir}/out/production/cpuschedule"/>
+  <property name="cpuschedule.testoutput.dir" value="${module.cpuschedule.basedir}/out/test/cpuschedule"/>
+  
+  <path id="cpuschedule.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="cpuschedule.module.production.classpath">
+    <path refid="${module.jdk.classpath.cpuschedule}"/>
+    <path refid="library.org.testfx:testfx-junit:4.0.13-alpha.classpath"/>
+    <path refid="library.org.loadui:testfx:3.1.2.classpath"/>
+    <path refid="library.org.testfx:testfx-core:4.0.13-alpha.classpath"/>
+    <path refid="library.org.hamcrest:hamcrest-junit:2.0.0.0.classpath"/>
+    <path refid="library.junit:junit:4.13.classpath"/>
+    <path refid="library.com.google.guava:guava:16.0.1.classpath"/>
+  </path>
+  
+  <path id="cpuschedule.runtime.production.module.classpath">
+    <pathelement location="${cpuschedule.output.dir}"/>
+    <path refid="library.org.testfx:testfx-junit:4.0.13-alpha.classpath"/>
+    <path refid="library.org.loadui:testfx:3.1.2.classpath"/>
+    <path refid="library.org.testfx:testfx-core:4.0.13-alpha.classpath"/>
+    <path refid="library.org.hamcrest:hamcrest-junit:2.0.0.0.classpath"/>
+    <path refid="library.junit:junit:4.13.classpath"/>
+    <path refid="library.com.google.guava:guava:16.0.1.classpath"/>
+  </path>
+  
+  <path id="cpuschedule.module.classpath">
+    <path refid="${module.jdk.classpath.cpuschedule}"/>
+    <pathelement location="${cpuschedule.output.dir}"/>
+    <path refid="library.org.testfx:testfx-junit:4.0.13-alpha.classpath"/>
+    <path refid="library.org.loadui:testfx:3.1.2.classpath"/>
+    <path refid="library.org.testfx:testfx-core:4.0.13-alpha.classpath"/>
+    <path refid="library.org.hamcrest:hamcrest-junit:2.0.0.0.classpath"/>
+    <path refid="library.junit:junit:4.13.classpath"/>
+    <path refid="library.com.google.guava:guava:16.0.1.classpath"/>
+  </path>
+  
+  <path id="cpuschedule.runtime.module.classpath">
+    <pathelement location="${cpuschedule.testoutput.dir}"/>
+    <pathelement location="${cpuschedule.output.dir}"/>
+    <path refid="library.org.testfx:testfx-junit:4.0.13-alpha.classpath"/>
+    <path refid="library.org.loadui:testfx:3.1.2.classpath"/>
+    <path refid="library.org.testfx:testfx-core:4.0.13-alpha.classpath"/>
+    <path refid="library.org.hamcrest:hamcrest-junit:2.0.0.0.classpath"/>
+    <path refid="library.junit:junit:4.13.classpath"/>
+    <path refid="library.com.google.guava:guava:16.0.1.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.cpuschedule">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.cpuschedule">
+    <patternset refid="excluded.from.module.cpuschedule"/>
+  </patternset>
+  
+  <path id="cpuschedule.module.sourcepath">
+    <dirset dir="${module.cpuschedule.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  <path id="cpuschedule.module.test.sourcepath">
+    <dirset dir="${module.cpuschedule.basedir}">
+      <include name="src/tests"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.cpuschedule" depends="compile.module.cpuschedule.production,compile.module.cpuschedule.tests" description="Compile module cpuschedule"/>
+  
+  <target name="compile.module.cpuschedule.production" depends="register.custom.compilers" description="Compile module cpuschedule; production classes">
+    <mkdir dir="${cpuschedule.output.dir}"/>
+    <javac2 destdir="${cpuschedule.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.cpuschedule}/javac">
+      <compilerarg line="${compiler.args.cpuschedule}"/>
+      <bootclasspath refid="cpuschedule.module.bootclasspath"/>
+      <classpath refid="cpuschedule.module.production.classpath"/>
+      <src refid="cpuschedule.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.cpuschedule"/>
+    </javac2>
+    
+    <copy todir="${cpuschedule.output.dir}">
+      <fileset dir="${module.cpuschedule.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.cpuschedule.tests" depends="register.custom.compilers,compile.module.cpuschedule.production" description="compile module cpuschedule; test classes" unless="skip.tests">
+    <mkdir dir="${cpuschedule.testoutput.dir}"/>
+    <javac2 destdir="${cpuschedule.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.cpuschedule}/javac">
+      <compilerarg line="${compiler.args.cpuschedule}"/>
+      <bootclasspath refid="cpuschedule.module.bootclasspath"/>
+      <classpath refid="cpuschedule.module.classpath"/>
+      <src refid="cpuschedule.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.cpuschedule"/>
+    </javac2>
+    
+    <copy todir="${cpuschedule.testoutput.dir}">
+      <fileset dir="${module.cpuschedule.basedir}/src/tests">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.cpuschedule" description="cleanup module">
+    <delete dir="${cpuschedule.output.dir}"/>
+    <delete dir="${cpuschedule.testoutput.dir}"/>
+  </target>
+</project>
