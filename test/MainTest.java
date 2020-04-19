@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.loadui.testfx.GuiTest.find;
 
-public class MainTest extends ApplicationTest {
+public class MainTest {
 
     @Test
     public void naiveTest() {
