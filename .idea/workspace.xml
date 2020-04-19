@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/cpuschedule/main/TestPath.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/TestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TestPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MainTest.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,14 +111,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="254" />
+          <entry key="java" value="316" />
           <entry key="xml" value="26" />
           <entry key="yml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="254" />
+          <entry key="JAVA" value="316" />
           <entry key="XML" value="26" />
           <entry key="YAML" value="11" />
         </counts>
@@ -146,8 +147,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="213">
+              <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/MainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,20 +169,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/MainTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2250">
-              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/TestPath.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -245,9 +244,9 @@
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/application/Main.java" />
-        <option value="$PROJECT_DIR$/test/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/TestPath.java" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/test/MainTest.java" />
       </list>
     </option>
   </component>
@@ -325,7 +324,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587338834146" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587340015638" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -360,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestPath">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -510,10 +509,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestPath" />
-        <item itemvalue="JUnit.MainTest.testAddButton" />
-        <item itemvalue="JUnit.MainTest.testBeginButtonLabel" />
         <item itemvalue="JUnit.MainTest.testAddButtonLabel" />
+        <item itemvalue="JUnit.MainTest.testAddButton" />
+        <item itemvalue="Application.TestPath" />
+        <item itemvalue="JUnit.MainTest.testBeginButtonLabel" />
         <item itemvalue="JUnit.MainTest.testFinalFreeTableView" />
       </list>
     </recent_temporary>
@@ -537,23 +536,11 @@
       <workItem from="1587068136622" duration="26923000" />
       <workItem from="1587175175713" duration="5204000" />
       <workItem from="1587230159124" duration="3872000" />
-      <workItem from="1587332960021" duration="5869000" />
+      <workItem from="1587332960021" duration="6993000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 15h 53m 59s.xml">
-      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 15h 54m 13s.xml">
-      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 15h 54m 30s.xml">
-      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 15h 57m 38s.xml">
-      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 16h 02m 51s.xml">
       <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
     </history-entry>
@@ -572,9 +559,21 @@
     <history-entry file="MainTest_testAddButton - 2020.04.19 at 16h 12m 49s.xml">
       <configuration name="MainTest.testAddButton" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_testAddButton - 2020.04.19 at 16h 29m 51s.xml">
+      <configuration name="MainTest.testAddButton" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 16h 41m 33s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 16h 41m 54s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 16h 45m 29s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78807000" />
+    <option name="totallyTimeSpent" value="79931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -589,7 +588,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.18696883" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29320112" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2917847" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30551627" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -706,34 +705,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2250">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/TestPath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

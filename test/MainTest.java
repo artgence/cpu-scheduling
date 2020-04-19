@@ -23,16 +23,25 @@ import static org.loadui.testfx.GuiTest.find;
 
 public class MainTest extends ApplicationTest {
 
+//    @Override
+//    public void start(Stage stage) {
+//        new Main().start(stage);
+//    }
+
     @Override
-    public void start(Stage stage) {
-        new Main().start(stage);
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("/home/circleci/project/src/main/resources/CPU Scheduling.fxml"));
+        stage.setScene(new Scene(root, 1254, 758));
+        stage.setTitle("CPU Scheduling");
+        stage.show();
+        stage.toFront();
     }
 
 //    @Override
 //    public void start(Stage stage) throws Exception {
-//        Parent mainNode = FXMLLoader.load(Main.class.getResource("resources/CPU Scheduling.fxml"));
+//        Parent mainNode = FXMLLoader.load(Main.class.getResource("/home/circleci/project/src/main/resources/CPU Scheduling.fxml"));
 //        Scene scene = new Scene(mainNode, 1254, 758);
-//        scene.getStylesheets().add(getClass().getResource("main/resources/application.css").toExternalForm());
+////        scene.getStylesheets().add(getClass().getResource("/home/circleci/project/src/main/resources/application.css").toExternalForm());
 //        stage.setScene(scene);
 //        stage.setTitle("CPU Scheduling");
 //        stage.show();
