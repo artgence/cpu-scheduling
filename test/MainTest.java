@@ -16,6 +16,8 @@ import org.junit.Test;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit.ApplicationTest;
 
+import java.util.Objects;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.loadui.testfx.GuiTest.find;
@@ -24,9 +26,9 @@ public class MainTest extends ApplicationTest {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent mainNode = FXMLLoader.load(Main.class.getResource("CPU Scheduling.fxml"));
+        Parent mainNode = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("CPU Scheduling.fxml")));
         Scene scene = new Scene(mainNode, 1254, 758);
-        scene.getStylesheets().add(getClass().getClassLoader().getResource("./application/application.css").toExternalForm());
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getClassLoader().getResource("./application/application.css")).toExternalForm());
         stage.setScene(scene);
         stage.setTitle("CPU Scheduling");
         stage.show();
