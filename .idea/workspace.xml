@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/cpuschedule/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/cpuschedule/MainTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MainTest.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -109,14 +111,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="32" />
           <entry key="xml" value="26" />
           <entry key="yml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="32" />
           <entry key="XML" value="26" />
           <entry key="YAML" value="11" />
         </counts>
@@ -167,8 +169,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="275">
+              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -318,7 +320,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587313881388" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587333939625" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -350,7 +352,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="JUnit.MainTest.testAddButtonLabel">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -498,10 +500,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.testAddButtonLabel" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.naiveTest" />
         <item itemvalue="JUnit.MainTest.testNameTextField" />
-        <item itemvalue="JUnit.MainTest.testAddButtonLabel" />
         <item itemvalue="JUnit.MainTest.testBeginRunningTableView" />
       </list>
     </recent_temporary>
@@ -525,26 +527,11 @@
       <workItem from="1587068136622" duration="26923000" />
       <workItem from="1587175175713" duration="5204000" />
       <workItem from="1587230159124" duration="3872000" />
-      <workItem from="1587332960021" duration="85000" />
+      <workItem from="1587332960021" duration="965000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_testBeginBlockedTableView - 2020.04.16 at 19h 49m 32s.xml">
-      <configuration name="MainTest.testBeginBlockedTableView" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testBeginReadyTableView - 2020.04.16 at 19h 50m 35s.xml">
-      <configuration name="MainTest.testBeginReadyTableView" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testBeginRunningTableView - 2020.04.16 at 19h 51m 00s.xml">
-      <configuration name="MainTest.testBeginRunningTableView" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testBeginButton - 2020.04.16 at 19h 53m 19s.xml">
-      <configuration name="MainTest.testBeginButton" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testBeginRunningTableView - 2020.04.16 at 19h 54m 25s.xml">
-      <configuration name="MainTest.testBeginRunningTableView" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest - 2020.04.16 at 19h 57m 06s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
@@ -560,9 +547,24 @@
     <history-entry file="MainTest - 2020.04.18 at 10h 19m 53s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 14h 59m 06s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 15h 00m 13s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 15h 00m 22s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 15h 01m 11s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testAddButtonLabel - 2020.04.19 at 15h 02m 24s.xml">
+      <configuration name="MainTest.testAddButtonLabel" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73023000" />
+    <option name="totallyTimeSpent" value="73903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -577,7 +579,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.18811882" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24645892" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30551627" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -590,7 +592,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="15" visible="true" weight="0.1898017" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.1898017" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -706,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state relative-caret-position="275">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
