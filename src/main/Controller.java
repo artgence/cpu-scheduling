@@ -1,4 +1,4 @@
-package application;
+package main;
 
 //相关包引入
 import java.net.URL;

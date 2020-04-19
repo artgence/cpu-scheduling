@@ -1,5 +1,4 @@
-import application.Controller;
-import application.Main;
+import main.Controller;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,6 +8,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.stage.Stage;
+import main.Main;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -22,21 +22,21 @@ import static org.loadui.testfx.GuiTest.find;
 
 public class MainTest extends ApplicationTest {
 
-//    @Override
-//    public void start(Stage stage) {
-//        new Main().start(stage);
-//    }
-
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent mainNode = FXMLLoader.load(Main.class.getResource("../resources/CPU Scheduling.fxml"));
-        Scene scene = new Scene(mainNode, 1254, 758);
-        scene.getStylesheets().add(getClass().getResource("resources/application.css").toExternalForm());
-        stage.setScene(scene);
-        stage.setTitle("CPU Scheduling");
-        stage.show();
-        stage.toFront();
+    public void start(Stage stage) {
+        new Main().start(stage);
     }
+
+//    @Override
+//    public void start(Stage stage) throws Exception {
+//        Parent mainNode = FXMLLoader.load(Main.class.getResource("resources/CPU Scheduling.fxml"));
+//        Scene scene = new Scene(mainNode, 1254, 758);
+//        scene.getStylesheets().add(getClass().getResource("main/resources/application.css").toExternalForm());
+//        stage.setScene(scene);
+//        stage.setTitle("CPU Scheduling");
+//        stage.show();
+//        stage.toFront();
+//    }
 
     @Before
     public void setUp() throws Exception {}
