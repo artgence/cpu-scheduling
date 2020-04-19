@@ -24,14 +24,20 @@ public class MainTest extends ApplicationTest {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent mainNode = FXMLLoader.load(Main.class.getResource("CPU Scheduling.fxml"));
-        Scene scene = new Scene(mainNode, 1254, 758);
-//        scene.getStylesheets().add(getClass().getResource("./application/application.css").toExternalForm());
-        stage.setScene(scene);
-        stage.setTitle("CPU Scheduling");
-        stage.show();
-        stage.toFront();
+        new Main().start(stage);
     }
+
+
+//    @Override
+//    public void start(Stage stage) throws Exception {
+//        Parent mainNode = FXMLLoader.load(Main.class.getResource("CPU Scheduling.fxml"));
+//        Scene scene = new Scene(mainNode, 1254, 758);
+//        scene.getStylesheets().add(getClass().getResource("./application/application.css").toExternalForm());
+//        stage.setScene(scene);
+//        stage.setTitle("CPU Scheduling");
+//        stage.show();
+//        stage.toFront();
+//    }
 
     @Before
     public void setUp() throws Exception {}
