@@ -7,4 +7,4 @@ jobs:
 
     steps:
       - checkout
-      - run: ant test
+      - run: xvfb ant test
