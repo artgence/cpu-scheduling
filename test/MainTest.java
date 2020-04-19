@@ -23,10 +23,9 @@ import static org.loadui.testfx.GuiTest.find;
 public class MainTest extends ApplicationTest {
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         new Main().start(stage);
     }
-
 
 //    @Override
 //    public void start(Stage stage) throws Exception {
