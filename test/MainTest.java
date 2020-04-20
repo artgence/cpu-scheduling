@@ -8,7 +8,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.stage.Stage;
-import main.Main;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -30,6 +29,7 @@ public class MainTest extends ApplicationTest {
 
     @Override
     public void start(Stage stage) throws Exception {
+        System.out.println(System.getProperty("user.dir"));
         Parent root = FXMLLoader.load(MainTest.class.getClassLoader().getResource("main/resources/CPU Scheduling.fxml"));
         Scene scene = new Scene(root, 1254, 758);
 //        scene.getStylesheets().add(getClass().getResource("main/resources/application.css").toExternalForm());
