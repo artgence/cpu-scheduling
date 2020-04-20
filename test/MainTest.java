@@ -30,8 +30,10 @@ public class MainTest extends ApplicationTest {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/home/circleci/project/src/main/resources/CPU Scheduling.fxml"));
-        stage.setScene(new Scene(root, 1254, 758));
+        Parent root = FXMLLoader.load(MainTest.class.getClassLoader().getResource("main/resources/CPU Scheduling.fxml"));
+        Scene scene = new Scene(root, 1254, 758);
+//        scene.getStylesheets().add(getClass().getResource("main/resources/application.css").toExternalForm());
+        stage.setScene(scene);
         stage.setTitle("CPU Scheduling");
         stage.show();
         stage.toFront();
