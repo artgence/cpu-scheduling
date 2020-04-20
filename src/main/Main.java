@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("resources/CPU Scheduling.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("resources/cpu-scheduling.fxml"));
             Scene scene = new Scene(root,1254,758);
             scene.getStylesheets().add(getClass().getResource("resources/application.css").toExternalForm());
             primaryStage.setScene(scene);

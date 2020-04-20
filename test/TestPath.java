@@ -9,8 +9,8 @@
 //public class TestPath {
 //    public static void main(String[] args) throws IOException {
 //        System.out.println(System.getProperty("user.dir"));
-//        System.out.println(FXMLLoader.load(Main.class.getClassLoader().getResource("resources/CPU Scheduling.fxml")).toString());
-////        File file = new File("src/main/resources/CPU Scheduling.fxml");
+//        System.out.println(FXMLLoader.load(Main.class.getClassLoader().getResource("resources/cpu-scheduling.fxml")).toString());
+////        File file = new File("src/main/resources/cpu-scheduling.fxml");
 ////        BufferedReader br = new BufferedReader(new FileReader(file));
 ////        String line = "";
 ////        String allcase = "";
