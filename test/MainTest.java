@@ -30,7 +30,7 @@ public class MainTest extends ApplicationTest {
     @Override
     public void start(Stage stage) throws Exception {
         System.out.println(System.getProperty("user.dir"));
-        Parent root = FXMLLoader.load(MainTest.class.getClassLoader().getResource("main/resources/CPU Scheduling.fxml"));
+        Parent root = FXMLLoader.load(MainTest.class.getClassLoader().getResource("src/main/resources/CPU Scheduling.fxml"));
         Scene scene = new Scene(root, 1254, 758);
 //        scene.getStylesheets().add(getClass().getResource("main/resources/application.css").toExternalForm());
         stage.setScene(scene);
