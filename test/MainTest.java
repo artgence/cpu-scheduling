@@ -63,26 +63,26 @@ public class MainTest extends ApplicationTest {
         assertEquals(pause.getText(), "暂停/继续");
     }
 
-//     @Test
-//     public void testSuspendButtonLabel() {
-//         final Button suspend = lookup("#SUSPEND").query();
-//         Assert.assertNotNull(suspend);
-//         assertEquals(suspend.getText(), "挂起");
-//     }
+    @Test
+    public void testSuspendButtonLabel() {
+        final Button suspend = lookup("#SUSPEND").query();
+        Assert.assertNotNull(suspend);
+        assertEquals(suspend.getText(), "挂起");
+    }
 
-//     @Test
-//     public void testResumeButtonLabel() {
-//         final Button resume = lookup("#RESUME").query();
-//         Assert.assertNotNull(resume);
-//         assertEquals(resume.getText(), "解挂");
-//     }
+    @Test
+    public void testResumeButtonLabel() {
+        final Button resume = lookup("#RESUME").query();
+        Assert.assertNotNull(resume);
+        assertEquals(resume.getText(), "解挂");
+    }
 
-//     @Test
-//     public void testExitButtonLabel() {
-//         final Button exit = lookup("#EXIT").query();
-//         Assert.assertNotNull(exit);
-//         assertEquals(exit.getText(), "退出");
-//     }
+    @Test
+    public void testExitButtonLabel() {
+        final Button exit = lookup("#EXIT").query();
+        Assert.assertNotNull(exit);
+        assertEquals(exit.getText(), "退出");
+    }
 
 //     @Test
 //     public void testNameTextField() {
