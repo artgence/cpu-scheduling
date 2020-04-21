@@ -247,43 +247,43 @@ public class MainTest extends ApplicationTest {
         assertEquals(name.getText(), "EXIT");
     }
 
-//     @Test
-//     public void testFinalFreeTableView() {
-//         final TableView<Controller.Info> free = lookup("#FREE").query();
-//         clickOn("#NAME");
-//         write("IDEA");
-//         clickOn("#TIME");
-//         write("10");
-//         clickOn("#PRIORITY");
-//         write("200");
-//         clickOn("#SIZE");
-//         write("300");
-//         final Controller.Info demo = new Controller.Info("Null1024", 0, 1024);
-//         clickOn("#ADD");
-//         clickOn("#BEGIN");
-//         sleep(6000);
-//         assertTrue(free.getItems().contains(demo));
-//     }
+    @Test
+    public void testFinalFreeTableView() {
+        final TableView<Controller.Info> free = lookup("#FREE").query();
+        clickOn("#NAME");
+        write("IDEA");
+        clickOn("#TIME");
+        write("10");
+        clickOn("#PRIORITY");
+        write("200");
+        clickOn("#SIZE");
+        write("300");
+        final Controller.Info demo = new Controller.Info("Null1024", 0, 1024);
+        clickOn("#ADD");
+        clickOn("#BEGIN");
+        sleep(6000);
+        assertTrue(free.getItems().contains(demo));
+    }
 
-//     @Test
-//     public void testBeginWaitingTableView() {
-//         final TextField name = lookup("#NAME").query();
-//         final TextField time = lookup("#TIME").query();
-//         final TextField priority = lookup("#PRIORITY").query();
-//         final TextField size = lookup("#SIZE").query();
-//         final TableView<Controller.Pcb> wait = lookup("#WAITING").query();
-//         clickOn("#NAME");
-//         write("IDEA");
-//         clickOn("#TIME");
-//         write("10");
-//         clickOn("#PRIORITY");
-//         write("200");
-//         clickOn("#SIZE");
-//         write("300");
-//         final Controller.Pcb demo = new Controller.Pcb(name.getText(), time.getText(), priority.getText(), size.getText());
-//         clickOn("#ADD");
-//         assertTrue(wait.getItems().contains(demo));
-//     }
+    @Test
+    public void testBeginWaitingTableView() {
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> wait = lookup("#WAITING").query();
+        clickOn("#NAME");
+        write("IDEA");
+        clickOn("#TIME");
+        write("10");
+        clickOn("#PRIORITY");
+        write("200");
+        clickOn("#SIZE");
+        write("300");
+        final Controller.Pcb demo = new Controller.Pcb(name.getText(), time.getText(), priority.getText(), size.getText());
+        clickOn("#ADD");
+        assertTrue(wait.getItems().contains(demo));
+    }
 
 //     @Test
 //     public void testBeginRunningTableView() {
