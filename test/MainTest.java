@@ -212,40 +212,40 @@ public class MainTest extends ApplicationTest {
         assertEquals(run.getItems().size(), 0);
     }
 
-//     @Test
-//     public void testResumeButton() {
-//         final TextField name = lookup("#NAME").query();
-//         final TextField time = lookup("#TIME").query();
-//         final TextField priority = lookup("#PRIORITY").query();
-//         final TextField size = lookup("#SIZE").query();
-//         final TableView<Controller.Pcb> block = lookup("#BLOCKED").query();
-//         final TableView<Controller.Pcb> run = lookup("#RUNNING").query();
-//         final TableView<Controller.Pcb> ready = lookup("#READY").query();
-//         clickOn("#NAME");
-//         write("IDEA");
-//         clickOn("#TIME");
-//         write("10");
-//         clickOn("#PRIORITY");
-//         write("200");
-//         clickOn("#SIZE");
-//         write("300");
-//         final Controller.Pcb demo = new Controller.Pcb(name.getText(), time.getText(), priority.getText(), size.getText());
-//         clickOn("#ADD");
-//         clickOn("#BEGIN");
-//         clickOn("#PAUSE");
-//         run.getItems().get(0).getCb().choose();
-//         clickOn("#SUSPEND");
-//         block.getItems().get(0).getCb().choose();
-//         clickOn("#RESUME");
-//         assertTrue(ready.getItems().contains(demo));
-//     }
+    @Test
+    public void testResumeButton() {
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> block = lookup("#BLOCKED").query();
+        final TableView<Controller.Pcb> run = lookup("#RUNNING").query();
+        final TableView<Controller.Pcb> ready = lookup("#READY").query();
+        clickOn("#NAME");
+        write("IDEA");
+        clickOn("#TIME");
+        write("10");
+        clickOn("#PRIORITY");
+        write("200");
+        clickOn("#SIZE");
+        write("300");
+        final Controller.Pcb demo = new Controller.Pcb(name.getText(), time.getText(), priority.getText(), size.getText());
+        clickOn("#ADD");
+        clickOn("#BEGIN");
+        clickOn("#PAUSE");
+        run.getItems().get(0).getCb().choose();
+        clickOn("#SUSPEND");
+        block.getItems().get(0).getCb().choose();
+        clickOn("#RESUME");
+        assertTrue(ready.getItems().contains(demo));
+    }
 
-//     @Test
-//     public void testExitButton() {
-//         final TextField name = lookup("#NAME").query();
-//         clickOn("#EXIT");
-//         assertEquals(name.getText(), "EXIT");
-//     }
+    @Test
+    public void testExitButton() {
+        final TextField name = lookup("#NAME").query();
+        clickOn("#EXIT");
+        assertEquals(name.getText(), "EXIT");
+    }
 
 //     @Test
 //     public void testFinalFreeTableView() {
