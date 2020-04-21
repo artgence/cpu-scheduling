@@ -100,21 +100,21 @@ public class MainTest extends ApplicationTest {
         assertEquals(time.getText(), "10");
     }
 
-//     @Test
-//     public void testPriorityTextField() {
-//         final TextField priority = lookup("#PRIORITY").query();
-//         clickOn("#PRIORITY");
-//         write("20");
-//         assertEquals(priority.getText(), "20");
-//     }
+    @Test
+    public void testPriorityTextField() {
+        final TextField priority = lookup("#PRIORITY").query();
+        clickOn("#PRIORITY");
+        write("20");
+        assertEquals(priority.getText(), "20");
+    }
 
-//     @Test
-//     public void testSizeTextField() {
-//         final TextField size = lookup("#SIZE").query();
-//         clickOn("#SIZE");
-//         write("300");
-//         assertEquals(size.getText(), "300");
-//     }
+    @Test
+    public void testSizeTextField() {
+        final TextField size = lookup("#SIZE").query();
+        clickOn("#SIZE");
+        write("300");
+        assertEquals(size.getText(), "300");
+    }
 
 //     @Test
 //     public void testAddButton() {
