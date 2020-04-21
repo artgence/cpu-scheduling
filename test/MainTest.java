@@ -84,21 +84,21 @@ public class MainTest extends ApplicationTest {
         assertEquals(exit.getText(), "退出");
     }
 
-//     @Test
-//     public void testNameTextField() {
-//         final TextField name = lookup("#NAME").query();
-//         clickOn("#NAME");
-//         write("IDEA");
-//         assertEquals(name.getText(), "IDEA");
-//     }
+    @Test
+    public void testNameTextField() {
+        final TextField name = lookup("#NAME").query();
+        clickOn("#NAME");
+        write("IDEA");
+        assertEquals(name.getText(), "IDEA");
+    }
 
-//     @Test
-//     public void testTimeTextField() {
-//         final TextField time = lookup("#TIME").query();
-//         clickOn("#TIME");
-//         write("10");
-//         assertEquals(time.getText(), "10");
-//     }
+    @Test
+    public void testTimeTextField() {
+        final TextField time = lookup("#TIME").query();
+        clickOn("#TIME");
+        write("10");
+        assertEquals(time.getText(), "10");
+    }
 
 //     @Test
 //     public void testPriorityTextField() {
