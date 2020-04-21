@@ -8,19 +8,15 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.stage.Stage;
-import main.Main;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit.ApplicationTest;
-
 import java.util.Objects;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.loadui.testfx.GuiTest.find;
 
 
 public class MainTest extends ApplicationTest {
@@ -48,49 +44,49 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testAddButtonLabel() {
-        final Button add = find("#ADD");
+        final Button add = (Button) lookup("#ADD").query();
         Assert.assertNotNull(add);
         assertEquals(add.getText(), "添加");
     }
 
     @Test
     public void testBeginButtonLabel() {
-        final Button begin = find("#BEGIN");
+        final Button begin = lookup("#BEGIN").query();
         Assert.assertNotNull(begin);
         assertEquals(begin.getText(), "开始");
     }
 
     @Test
     public void testPauseButtonLabel() {
-        final Button pause = find("#PAUSE");
+        final Button pause = lookup("#PAUSE").query();
         Assert.assertNotNull(pause);
         assertEquals(pause.getText(), "暂停/继续");
     }
 
     @Test
     public void testSuspendButtonLabel() {
-        final Button suspend = find("#SUSPEND");
+        final Button suspend = lookup("#SUSPEND").query();
         Assert.assertNotNull(suspend);
         assertEquals(suspend.getText(), "挂起");
     }
 
     @Test
     public void testResumeButtonLabel() {
-        final Button resume = find("#RESUME");
+        final Button resume = lookup("#RESUME").query();
         Assert.assertNotNull(resume);
         assertEquals(resume.getText(), "解挂");
     }
 
     @Test
     public void testExitButtonLabel() {
-        final Button exit = find("#EXIT");
+        final Button exit = lookup("#EXIT").query();
         Assert.assertNotNull(exit);
         assertEquals(exit.getText(), "退出");
     }
 
     @Test
     public void testNameTextField() {
-        final TextField name = find("#NAME");
+        final TextField name = lookup("#NAME").query();
         clickOn("#NAME");
         write("IDEA");
         assertEquals(name.getText(), "IDEA");
@@ -98,7 +94,7 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testTimeTextField() {
-        final TextField time = find("#TIME");
+        final TextField time = lookup("#TIME").query();
         clickOn("#TIME");
         write("10");
         assertEquals(time.getText(), "10");
@@ -106,7 +102,7 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testPriorityTextField() {
-        final TextField priority = find("#PRIORITY");
+        final TextField priority = lookup("#PRIORITY").query();
         clickOn("#PRIORITY");
         write("20");
         assertEquals(priority.getText(), "20");
@@ -114,7 +110,7 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testSizeTextField() {
-        final TextField size = find("#SIZE");
+        final TextField size = lookup("#SIZE").query();
         clickOn("#SIZE");
         write("300");
         assertEquals(size.getText(), "300");
@@ -122,11 +118,11 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testAddButton() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> wait = find("#WAITING");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> wait = lookup("#WAITING").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
@@ -146,12 +142,12 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testBeginButton() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> run = find("#RUNNING");
-        final TableView<Controller.Pcb> wait = find("#WAITING");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> run = lookup("#RUNNING").query();
+        final TableView<Controller.Pcb> wait = lookup("#WAITING").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
@@ -169,11 +165,11 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testPauseButton() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> run = find("#RUNNING");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> run = lookup("#RUNNING").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
@@ -192,12 +188,12 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testSuspendButton() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> block = find("#BLOCKED");
-        final TableView<Controller.Pcb> run = find("#RUNNING");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> block = lookup("#BLOCKED").query();
+        final TableView<Controller.Pcb> run = lookup("#RUNNING").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
@@ -218,13 +214,13 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testResumeButton() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> block = find("#BLOCKED");
-        final TableView<Controller.Pcb> run = find("#RUNNING");
-        final TableView<Controller.Pcb> ready = find("#READY");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> block = lookup("#BLOCKED").query();
+        final TableView<Controller.Pcb> run = lookup("#RUNNING").query();
+        final TableView<Controller.Pcb> ready = lookup("#READY").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
@@ -246,14 +242,14 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testExitButton() {
-        final TextField name = find("#NAME");
+        final TextField name = lookup("#NAME").query();
         clickOn("#EXIT");
         assertEquals(name.getText(), "EXIT");
     }
 
     @Test
     public void testFinalFreeTableView() {
-        final TableView<Controller.Info> free = find("#FREE");
+        final TableView<Controller.Info> free = lookup("#FREE").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
@@ -271,11 +267,11 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testBeginWaitingTableView() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> wait = find("#WAITING");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> wait = lookup("#WAITING").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
@@ -291,11 +287,11 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testBeginRunningTableView() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> run = find("#RUNNING");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> run = lookup("#RUNNING").query();
         clickOn("#NAME");
         write("ECLIPSE");
         clickOn("#TIME");
@@ -312,11 +308,11 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testBeginReadyTableView() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> ready = find("#READY");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> ready = lookup("#READY").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
@@ -344,12 +340,12 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void testBeginBlockedTableView() {
-        final TextField name = find("#NAME");
-        final TextField time = find("#TIME");
-        final TextField priority = find("#PRIORITY");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Pcb> block = find("#BLOCKED");
-        final TableView<Controller.Pcb> run = find("#RUNNING");
+        final TextField name = lookup("#NAME").query();
+        final TextField time = lookup("#TIME").query();
+        final TextField priority = lookup("#PRIORITY").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Pcb> block = lookup("#BLOCKED").query();
+        final TableView<Controller.Pcb> run = lookup("#RUNNING").query();
         clickOn("#NAME");
         write("ECLIPSE");
         clickOn("#TIME");
@@ -368,9 +364,9 @@ public class MainTest extends ApplicationTest {
 
     @Test
     public void test100SizeOccupiedTableView() {
-        final TextField name = find("#NAME");
-        final TextField size = find("#SIZE");
-        final TableView<Controller.Info> occupied = find("#OCCUPIED");
+        final TextField name = lookup("#NAME").query();
+        final TextField size = lookup("#SIZE").query();
+        final TableView<Controller.Info> occupied = lookup("#OCCUPIED").query();
         clickOn("#NAME");
         write("IDEA");
         clickOn("#TIME");
