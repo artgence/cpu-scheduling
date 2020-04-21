@@ -14,6 +14,9 @@
         <javac srcdir="${main.src.dir}" destdir="${main.build.dir}" includeantruntime="false">
 	  <classpath refid="classpath.test"/>
 	</javac>
+	<copy todir="${main.build.dir}/resources">
+	  <fileset dir="src/main/resources/"/>
+	</copy>
     </target>
 
     <target name="test-compile" depends="compile">

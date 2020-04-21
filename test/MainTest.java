@@ -25,29 +25,11 @@ import static org.loadui.testfx.GuiTest.find;
 
 public class MainTest extends ApplicationTest {
 
-//    @Override
-//    public void start(Stage stage) {
-//        new Main().start(stage);
-//    }
-
-//    @Override
-//    public void start(Stage stage) throws Exception {
-//        System.out.println(System.getProperty("user.dir"));
-//        Parent root = FXMLLoader.load(MainTest.class.getClassLoader().getResource("main/resources/cpu-scheduling.fxml"));
-//        Scene scene = new Scene(root, 1254, 758);
-////        scene.getStylesheets().add(getClass().getResource("main/resources/application.css").toExternalForm());
-//        stage.setScene(scene);
-//        stage.setTitle("CPU Scheduling");
-//        stage.show();
-//        stage.toFront();
-//    }
-
     @Override
     public void start(Stage stage) throws Exception {
-        System.out.println("Test " + MainTest.class.getClassLoader().getResource("main/resources/cpu-scheduling.fxml"));
-        Parent mainNode = FXMLLoader.load(MainTest.class.getResource("/main/resources/cpu-scheduling.fxml"));
+        Parent mainNode = FXMLLoader.load(getClass().getResource("resources/cpu-scheduling.fxml"));
         Scene scene = new Scene(mainNode, 1254, 758);
-        scene.getStylesheets().add(Objects.requireNonNull(getClass().getClassLoader().getResource("main/resources/application.css")).toExternalForm());
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("resources/application.css")).toExternalForm());
         stage.setScene(scene);
         stage.setTitle("CPU Scheduling");
         stage.show();
